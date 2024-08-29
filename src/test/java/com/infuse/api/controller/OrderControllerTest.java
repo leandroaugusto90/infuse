@@ -22,10 +22,10 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.infuse.api.domain.dto.CustomerDTO;
-import com.infuse.api.domain.dto.OrderDTO;
-import com.infuse.api.domain.dto.request.OrderRequestDTO;
-import com.infuse.api.domain.dto.response.OrderResponseDTO;
+import com.infuse.api.model.dto.CustomerDTO;
+import com.infuse.api.model.dto.OrderDTO;
+import com.infuse.api.model.dto.request.OrderRequestDTO;
+import com.infuse.api.model.dto.response.OrderResponseDTO;
 import com.infuse.api.service.OrderService;
 
 class OrderControllerTest {

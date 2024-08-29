@@ -1,11 +1,13 @@
-package com.infuse.api.domain.dto.request;
+package com.infuse.api.model.dto.request;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+@Valid
 public class OrderRequestDTO {
 
 	@NotNull(message = "código do cliente não pode ser nulo")
@@ -13,8 +15,7 @@ public class OrderRequestDTO {
 	@NotNull(message = "Número controle não pode ser nulo")
 	private Long controlNumber;
 	private LocalDateTime registrationDate = LocalDateTime.now();
-	@NotBlank(message = "Nome do produto não pode ser vazio")
-	@NotNull(message = "Nome do produto não pode ser nulo")
+	@NotBlank(message = "Nome do produto não pode ser null")
 	private String productName;
 	@NotNull(message = "Valor do produto não pode ser nulo")
 	private BigDecimal productValue;
@@ -23,10 +24,8 @@ public class OrderRequestDTO {
 	public OrderRequestDTO() {
 	}
 
-	public OrderRequestDTO(@NotNull(message = "código do cliente não pode ser nulo") Long customerCode,
-			@NotNull(message = "Número controle não pode ser nulo") Long controlNumber, LocalDateTime registrationDate,
-			@NotBlank(message = "Nome do produto não pode ser vazio") @NotNull(message = "Nome do produto não pode ser nulo") String productName,
-			@NotNull(message = "Valor do produto não pode ser nulo") BigDecimal productValue, Integer productQuantity) {
+	public OrderRequestDTO(Long customerCode, Long controlNumber, LocalDateTime registrationDate,
+			String productName, BigDecimal productValue, Integer productQuantity) {
 		this.customerCode = customerCode;
 		this.controlNumber = controlNumber;
 		this.registrationDate = registrationDate;

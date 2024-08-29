@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.infuse.api.domain.Customer;
+import com.infuse.api.model.Customer;
 
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 

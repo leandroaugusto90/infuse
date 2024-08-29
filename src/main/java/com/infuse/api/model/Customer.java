@@ -1,4 +1,4 @@
-package com.infuse.api.domain;
+package com.infuse.api.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

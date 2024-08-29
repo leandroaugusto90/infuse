@@ -8,13 +8,13 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.infuse.api.domain.Customer;
-import com.infuse.api.domain.CustomerOrder;
-import com.infuse.api.domain.Order;
-import com.infuse.api.domain.dto.request.OrderRequestDTO;
-import com.infuse.api.domain.dto.response.OrderResponseDTO;
-import com.infuse.api.domain.mapper.OrderMapper;
 import com.infuse.api.exception.BusinessException;
+import com.infuse.api.model.Customer;
+import com.infuse.api.model.CustomerOrder;
+import com.infuse.api.model.Order;
+import com.infuse.api.model.dto.request.OrderRequestDTO;
+import com.infuse.api.model.dto.response.OrderResponseDTO;
+import com.infuse.api.model.mapper.OrderMapper;
 import com.infuse.api.repository.CustomerOrderRepository;
 import com.infuse.api.repository.CustomerRepository;
 import com.infuse.api.repository.OrderRepository;

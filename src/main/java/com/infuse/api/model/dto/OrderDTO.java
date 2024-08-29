@@ -1,4 +1,4 @@
-package com.infuse.api.domain.dto;
+package com.infuse.api.model.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

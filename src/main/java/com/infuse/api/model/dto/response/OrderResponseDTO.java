@@ -1,9 +1,9 @@
-package com.infuse.api.domain.dto.response;
+package com.infuse.api.model.dto.response;
 
 import java.math.BigDecimal;
 
-import com.infuse.api.domain.dto.CustomerDTO;
-import com.infuse.api.domain.dto.OrderDTO;
+import com.infuse.api.model.dto.CustomerDTO;
+import com.infuse.api.model.dto.OrderDTO;
 
 public class OrderResponseDTO {
 

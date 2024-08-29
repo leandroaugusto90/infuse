@@ -1,4 +1,4 @@
-package com.infuse.api.domain.dto;
+package com.infuse.api.model.dto;
 
 public class CustomerDTO {
 
